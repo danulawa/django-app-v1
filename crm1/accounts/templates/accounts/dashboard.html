@@ -2,6 +2,48 @@
 
 {% block content %}
 
-    <h5> Dashboard Malli!! </h5>
+{% include 'accounts/sub-components/stats.html' %}
+
+<div class="row">
+    <div class="col-md-5 table-style-1">
+
+        <h5> Customers </h5>
+        <hr>
+
+        <div class="card card-body">
+
+            <a href="#" class="btn btn-primary btn-sm btn-block"> Create New Customer </a>
+            <table class="table table-sm">
+                <tr>
+                    <th></th>
+                    <th>Customer Name</th>
+                    <th># of Orders</th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    
+    <div class="col-md-7 table-style-1">
+
+        <h5> Top 5 Orders </h5>
+        <hr>
+
+        <div class="card card-body">
+
+            <a href="#" class="btn btn-primary btn-sm btn-block"> Create New Order </a>
+            <table class="table table-sm">
+                <tr>
+                    <th>Product</th>
+                    <th>Order Date</th>
+                    <th>Status</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
 
 {% endblock %}
